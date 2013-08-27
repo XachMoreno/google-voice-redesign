@@ -27,5 +27,35 @@
 }
 
 .container {
-	
+	#menu-sidebar {
+		
+/* 		margin-left: -270px; */
+		
+		&:hover {
+			transform: translateX(100px);
+		}
+		
+		ul {
+			background-color: white;
+			
+			li {
+				list-style-type: none;
+				color: #737373;
+				font-size: 14px;
+				
+				a {
+					color: #737373;
+					
+					&:active {
+						background-color: #E5E5E5;
+					}
+					
+					&:hover {
+						background-color: #E6E6E6;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
