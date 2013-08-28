@@ -35,16 +35,62 @@
         </div>
     </div>
     
-    <div class="container" style="margin-top:50px">
-        <div id="menu-sidebar">
-            <ul>
-                <li><a href="index.html" alt="Inbox">Inbox</a></li>
-                <li><a href="voicemails.html" alt="Voicemails">Voicemails</a></li>
-                <li><a href="texts.html" alt="Texts">Texts</a></li>
-                <li><a href="call-log.html" alt="Call Log">Call Log</a></li>
-            </ul>
-        </div>
+<nav class="main-nav" id="main-nav">
+    <a href="#">Inbox</a>
+    <a href="#">Voicemails</a>
+    <a href="#">Texts</a>
+    <a href="#">Call Log</a>
+</nav>
+
+<div class="page-wrap">
+
+    <header class="main-header">
+        <a href="#main-nav" class="open-menu">
+            ☰
+        </a>
+        <a href="#" class="close-menu">
+            ☰
+        </a>
+    </header>
+  
+    <div class="content" id="container">
+        <ul id="myContent">             
+            <li>
+                <h1>Place a call</h1>
+                <img src="images/dialpad.png" alt="dialpad"/>
+            </li>
+            
+            <li>
+                <h1>Voicemail</h1>
+                <div id="waveform" style="height: 128px">
+                    <div class="progress" id="progress-bar">
+                        <div class="progress-bar progress-bar-info"></div>
+                    </div>
+    
+                    <!-- Here be the waveform -->
+                </div>
+            </li>
+            
+            <li>
+                <h1>Text</h1>
+            </li>
+            
+            <li>
+                <h1>Call Log</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat erat at lectus ultrices fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod risus eu felis aliquam venenatis. Fusce nec quam sit amet nulla dignissim accumsan et eu purus. Maecenas lorem lacus, dapibus ac lacus et, mattis tempus purus. Vestibulum ornare leo est, consequat blandit massa rhoncus in. Duis vel aliquam tortor. Maecenas commodo quis metus commodo gravida.</p>
+            </li>
+            
+            <li>
+                <h1>Voicemail</h1>
+            </li>
+            
+            <li>
+                <h1>Text</h1>
+            </li>
+        </ul> 
     </div>
+  
+</div>
 
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
@@ -79,6 +125,15 @@
     <script src="scripts/vendor/bootstrap/bootstrap-scrollspy.js"></script>
     <script src="scripts/vendor/bootstrap/bootstrap-collapse.js"></script>
     <script src="scripts/vendor/bootstrap/bootstrap-tab.js"></script>
+    <script src="components/masonry/masonry.js"></script>
+    <!--   Observer.js   -->
+    <script src="scripts/observer.js"></script>
+    <!--   Wavesurfer.js   -->
+    <script src="scripts/wavesurfer/wavesurfer.js"></script>
+    <script src="scripts/wavesurfer/webaudio.js"></script>
+    <script src="scripts/wavesurfer/drawer.js"></script>
+    <script src="scripts/wavesurfer/drawer.canvas.js"></script>
+    <script src="scripts/wavesurfer/drawer.svg.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/amd-app.js -->
