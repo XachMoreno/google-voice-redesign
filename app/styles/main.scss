@@ -67,6 +67,7 @@ body {
 	top: 0;
 	width: 0;
 	height: 100%;
+/* 	width: 214px; */
 	overflow-y: auto;
 	transition: width 0.3s ease;
 	
@@ -170,3 +171,30 @@ body {
 		margin-left: auto;
 	}
 }
+
+
+/* ///////////////////////////// Cards ///////////////////////////// */
+
+.dialpad {
+	height: 250px;
+}
+
+.voicemail {
+	background-image: url('images/waveform.png');
+}
+
+.textmessage {
+	
+}
+
+.calllog {
+	
+}
+
+
+
+
+
+
+
+
