@@ -2,6 +2,7 @@
 
 body {
 	background-color: #E5E5E5;
+	font-size: 16px;
 }
 
 #black-bar {
@@ -75,6 +76,8 @@ body {
 		display: block;
 		color: black;
 		padding: 15px;
+		background-color: #F5F5F5;
+		padding-left: 67px;
 		
 		&:hover, &:focus {
 			background-color: #F5F5F5;
@@ -82,7 +85,7 @@ body {
 		}
 		
 		&:first-child {
-			margin-top: 105px;
+			margin-top: 154px;
 		}
   	}
 	
@@ -98,7 +101,7 @@ body {
 }
 
 .content {
-	padding: 100px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 }
 
 .close-menu {
@@ -120,10 +123,10 @@ body {
 		display: block;
 	}
 	
-	.main-header {
+/* 	.main-header {
 		width: 80%;
 		left: 20%;
-	}
+	} */
 }
 
 #container {
@@ -138,7 +141,7 @@ body {
 		column-count: 3;
 		column-gap: 10px;
 		width: 1200px;
-/* 		height: 500px; */
+		height: 784px;
 		
 		li {
 			background-color: white;
@@ -175,26 +178,387 @@ body {
 
 /* ///////////////////////////// Cards ///////////////////////////// */
 
+.card {
+	.name {
+		color: #333;
+		font-weight: 500;
+	}
+	
+	h1 {
+		font-weight: 300;
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
 .dialpad {
 	height: 250px;
+	
+	img {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 .voicemail {
-	background-image: url('images/waveform.png');
+/* 	background-image: url('../images/waveform.png');
+	background-repeat: no-repeat; */
+	
+	.transcript {
+		margin-top: 10px;
+		
+		strong {
+			
+		}
+	}
 }
 
 .textmessage {
+	.text-conversation {
+		.row {
+			margin-left: 0px;
+			margin-bottom: -15px;
+		}
+		
+		.left {
+			margin: 5px;
+			
+			p {
+				text-align: left;
+				margin-left: 25px;
+			}
+			
+			h2 {
+				text-align: left;
+				font-size: 85%;
+				line-height: 12px;
+			}
+		}
+		
+		.right {
+			margin: 5px;
+			
+			p {
+				text-align: right;
+				margin-right: 25px;
+			}
+			
+			h2 {
+				text-align: right;
+				font-size: 85%;
+				line-height: 12px;
+			}
+		}
+		
+		input {
+			width: 97%;
+			margin-top: 15px;
+		}
+	}
 	
 }
 
 .calllog {
 	
+	.row {
+		margin-left: 20px;
+		margin-bottom: 0px;
+		width: 90%;
+		
+		&:first-child {
+			margin-top: 20px;
+		}
+		
+		img {
+			float: left;
+			clear: both;
+			padding-bottom: 10px;
+			margin-left: 0px;
+			height: 20px;
+			width: 20px;
+		}
+		
+		p {
+			padding-bottom: 10px;
+			margin-left: 32px;
+		}
+	}
 }
 
 
+/* ////////////////////////////////////////////////////// */
+/* /////////// GridLoadingEffect component.css ////////// */
+/* ///////////////////////////////////////////////////// */
 
+.grid {
+	max-width: 69em;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
 
+.grid li {
+	display: block;
+	float: left;
+	padding: 10px;
+	width: 33%;
+	opacity: 0;
+	margin: 10px;
+	background-color: white;
+	border: 1px solid #e3e3e3;
+}
 
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
 
+.grid li a,
+.grid li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+/* Effect 1: opacity */
+.grid.effect-1 li.animate {
+	-webkit-animation: fadeIn 0.65s ease forwards;
+	-moz-animation: fadeIn 0.65s ease forwards;
+	animation: fadeIn 0.65s ease forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+	to { opacity: 1; }
+}
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+
+/* Effect 3: Scale up */
+.grid.effect-3 li.animate {
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	-webkit-animation: scaleUp 0.65s ease-in-out forwards;
+	-moz-animation: scaleUp 0.65s ease-in-out forwards;
+	animation: scaleUp 0.65s ease-in-out forwards;
+}
+
+@-webkit-keyframes scaleUp {
+	to { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@-moz-keyframes scaleUp {
+	to { -moz-transform: scale(1); opacity: 1; }
+}
+
+@keyframes scaleUp {
+	to { transform: scale(1); opacity: 1; }
+}
+
+/* Effect 4: fall perspective */
+.grid.effect-4 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-4 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	-moz-transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	transform: translateZ(400px) translateY(300px) rotateX(-90deg);
+	-webkit-animation: fallPerspective .8s ease-in-out forwards;
+	-moz-animation: fallPerspective .8s ease-in-out forwards;
+	animation: fallPerspective .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes fallPerspective {
+	100% { -webkit-transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+@-moz-keyframes fallPerspective {
+	100% { -moz-transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+@keyframes fallPerspective {
+	100% { transform: translateZ(0px) translateY(0px) rotateX(0deg); opacity: 1; }
+}
+
+/* Effect 5: fly (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-5 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-5 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 50% 50% -300px;
+	-moz-transform-origin: 50% 50% -300px;
+	transform-origin: 50% 50% -300px;
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+	-webkit-animation: fly .8s ease-in-out forwards;
+	-moz-animation: fly .8s ease-in-out forwards;
+	animation: fly .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes fly {
+	100% { -webkit-transform: rotateX(0deg); opacity: 1; }
+}
+
+@-moz-keyframes fly {
+	100% { -moz-transform: rotateX(0deg); opacity: 1; }
+}
+
+@keyframes fly {
+	100% { transform: rotateX(0deg); opacity: 1; }
+}
+
+/* Effect 6: flip (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-6 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-6 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform-origin: 0% 0%;
+	-moz-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-transform: rotateX(-80deg);
+	-moz-transform: rotateX(-80deg);
+	transform: rotateX(-80deg);
+	-webkit-animation: flip .8s ease-in-out forwards;
+	-moz-animation: flip .8s ease-in-out forwards;
+	animation: flip .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes flip {
+	100% { -webkit-transform: rotateX(0deg); opacity: 1; }
+}
+
+@-moz-keyframes flip {
+	100% { -moz-transform: rotateX(0deg); opacity: 1; }
+}
+
+@keyframes flip {
+	100% { transform: rotateX(0deg); opacity: 1; }
+}
+
+/* Effect 7: helix (based on http://lab.hakim.se/scroll-effects/ by @hakimel) */
+.grid.effect-7 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-7 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+	-webkit-animation: helix .8s ease-in-out forwards;
+	-moz-animation: helix .8s ease-in-out forwards;
+	animation: helix .8s ease-in-out forwards;
+}
+
+@-webkit-keyframes helix {
+	100% { -webkit-transform: rotateY(0deg); opacity: 1; }
+}
+
+@-moz-keyframes helix {
+	100% { -moz-transform: rotateY(0deg); opacity: 1; }
+}
+
+@keyframes helix {
+	100% { transform: rotateY(0deg); opacity: 1; }
+}
+
+/* Effect 8:  */
+.grid.effect-8 {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-8 li.animate {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: scale(0.4);
+	-moz-transform: scale(0.4);
+	transform: scale(0.4);
+	-webkit-animation: popUp .8s ease-in forwards;
+	-moz-animation: popUp .8s ease-in forwards;
+	animation: popUp .8s ease-in forwards;
+}
+
+@-webkit-keyframes popUp {
+	70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@-moz-keyframes popUp {
+	70% { -moz-transform: scale(1.1); opacity: .8; -moz-animation-timing-function: ease-out; }
+	100% { -moz-transform: scale(1); opacity: 1; }
+}
+
+@keyframes popUp {
+	70% { transform: scale(1.1); opacity: .8; animation-timing-function: ease-out; }
+	100% { transform: scale(1); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 100%;
+	}
+}
 
 

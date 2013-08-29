@@ -54,38 +54,118 @@
     </header>
   
     <div class="content" id="container">
-        <ul id="myContent">             
-            <li class="dialpad">
+<!--         <ul id="myContent">              -->
+        <ul class="grid effect-5" id="grid">
+            <li class="card dialpad">
                 <h1>Place a call</h1>
-                <img src="images/dialpad.png" alt="dialpad"/>
+                
+                <img src="../images/dialpad.png" alt="Dialpad"/>
             </li>
             
-            <li class="voicmail">
-                <h1>Voicemail</h1>
-                  <!--  <div id="waveform" style="height: 128px">
-                    <div class="progress" id="progress-bar">
-                        <div class="progress-bar progress-bar-info"></div>
+            <li class="card voicemail">
+                <h1>Voicemail from <span class="name">Mom</span></h1>
+                
+                <img src="../images/waveform-green.png" alt="Waveform"/>
+                
+                <p class="transcription"><strong>Yeah, Hello own.</strong> Where are you pick up your phone. Yeah been trying to talk to you all day, call me back. Bye.</p>
+            </li>
+            
+            <li class="card textmessage">
+                <h1>Text from <span class="name">Rebecca</span></h1>
+                
+                <div class="text-conversation">
+                  <div class="row">
+                    <div class="left">
+                      <h2>Rebecca</h2>
+                      <p>Hey, any plans for dinner tonight?</p>
                     </div>
-    
-                    
-                </div> -->
+                  </div>
+                  
+                  <div class="row">
+                    <div class="right">
+                      <h2>Me</h2>
+                      <p>Nope. :) Want to meet around 8?</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="left">
+                      <h2>Rebecca</h2>
+                      <p>Thai..Green Curry?</a>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="right">
+                      <h2>Me</h2>
+                      <p>mmm Yes #YOLO</p>
+                    </div>
+                  </div>
+                  
+                  <input type="text" class="input" width="80%"/>
+                 </div>
             </li>
             
-            <li class="textmessage">
-                <h1>Text</h1>
-            </li>
-            
-            <li class="calllog">
+            <li class="card calllog">
                 <h1>Call Log</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat erat at lectus ultrices fermentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla euismod risus eu felis aliquam venenatis. Fusce nec quam sit amet nulla dignissim accumsan et eu purus. Maecenas lorem lacus, dapibus ac lacus et, mattis tempus purus. Vestibulum ornare leo est, consequat blandit massa rhoncus in. Duis vel aliquam tortor. Maecenas commodo quis metus commodo gravida.</p>
+                
+                <div class="row">
+                  <img src="images/call_received_jfk.png"/> <p>3 hours ago from <span class="name">Rebecca Mosbarger</span></p>
+                </div>
+                
+                <div class="row">
+                  <img src="images/call_placed_jfk.png"/> <p>41 min ago to <span class="name">Harrsion Giroux</span></p>
+                </div>
+                
+                <div class="row">
+                  <img src="images/call_received_jfk.png"/> <p>12 min ago from <span class="name">Rebecca Mosbarger</span></p>
+                </div>
+                
+                <div class="row">
+                  <img src="images/missed_call.png"/> <p>seconds ago from <span class="name">Grandma</span></p>
+                </div>
             </li>
             
-            <li class="voicmail">
-                <h1>Voicemail</h1>
+            <li class="card voicemail">
+                <h1>Voicemail from <span class="name">Rebecca</span></h1>
+                
+                <img src="../images/waveform-yellow.png" alt="Waveform"/>
             </li>
             
-            <li class="textmessage">
-                <h1>Text</h1>
+            <li class="card textmessage">
+                <h1>Text from <span class="name">Dad</span></h1>
+                
+                <div class="text-conversation">
+                  <div class="row">
+                    <div class="left">
+                      <h2>Dad</h2>
+                      <p>Hey, any plans for dinner tonight?</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="right">
+                      <h2>Me</h2>
+                      <p>Nope. :) Want to meet around 8?</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="left">
+                      <h2>Dad</h2>
+                      <p>Thai..Green Curry?</a>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="right">
+                      <h2>Me</h2>
+                      <p>mmm Yes #YOLO</p>
+                    </div>
+                  </div>
+                  
+                  <input type="text" class="input" width="80%"/>
+                 </div>
             </li>
         </ul> 
     </div>
@@ -125,7 +205,6 @@
     <script src="scripts/vendor/bootstrap/bootstrap-scrollspy.js"></script>
     <script src="scripts/vendor/bootstrap/bootstrap-collapse.js"></script>
     <script src="scripts/vendor/bootstrap/bootstrap-tab.js"></script>
-    <script src="components/masonry/masonry.js"></script>
     <!--   Observer.js   -->
     <script src="scripts/observer.js"></script>
     <!--   Wavesurfer.js   -->
@@ -134,6 +213,18 @@
     <script src="scripts/wavesurfer/drawer.js"></script>
     <script src="scripts/wavesurfer/drawer.canvas.js"></script>
     <script src="scripts/wavesurfer/drawer.svg.js"></script>
+    <!-- Masonry.js -->
+    <script src="scripts/masonry/masonry.pkgd.min.js"></script>
+    <script src="scripts/masonry/imagesloaded.js"></script>
+    <script src="scripts/masonry/classie.js"></script>
+    <script src="scripts/masonry/AnimOnScroll.js"></script>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.7,
+            viewportFactor : 0.2
+        } );
+    </script>
     <!-- endbuild -->
 
     <!-- build:js scripts/amd-app.js -->
