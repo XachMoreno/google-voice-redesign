@@ -20,6 +20,19 @@
     <div class="row">
         <div class="span12" id="black-bar">
             <!-- Black Bar -->
+            <ul>
+              <li><a href="http://plus.google.com">+You</a></li>
+              <li><a href="http://google.com">Search</a></li>
+              <li><a href="http://images.google.com">Images</a></li>
+              <li><a href="http://maps.google.com">Maps</a></li>
+              <li><a href="http://play.google.com">Play</a></li>
+              <li><a href="http://youtube.com">YouTube</a></li>
+              <li><a href="http://news.google.com">News</a></li>
+              <li><a href="http://mail.google.com">Gmail</a></li>
+              <li><a href="http://drive.google.com">Drive</a></li>
+              <li><a href="http://www.google.com/calendar">Calendar</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
         </div>
     </div>
     
@@ -31,190 +44,212 @@
     
     <div class="row">
         <div class="span12" id="grey-bar">
-            <!-- Gray Container -->
+            <!-- Gray Bar -->
+            <div id="filters">
+              <ul>
+                <li><a href="#" class="active">All</a></li>
+                <li><a href="#">Unread</a></li>
+                <!-- <li>Archived</li> -->
+              </ul>
+            </div>
         </div>
     </div>
     
-<nav class="main-nav" id="main-nav">
-    <a href="#">Inbox</a>
-    <a href="#">Voicemails</a>
-    <a href="#">Texts</a>
-    <a href="#">Call Log</a>
-</nav>
+<!-- <nav class="main-nav" id="main-nav">
+    <a href="#">Inbox <i class="icon-home"></i></a>
+    <a href="#">Voicemails <i class="icon-play"></i></a>
+    <a href="#">Texts <i class="icon-comment"></i></a>
+    <a href="#">Call Log <i class="icon-th-list"></i></a>
+</nav> -->
 
 <div class="page-wrap">
-
-    <header class="main-header">
-        <a href="#main-nav" class="open-menu">
-            ☰
-        </a>
-        <a href="#" class="close-menu">
-            ☰
-        </a>
-    </header>
-  
     <div class="content" id="container">
-<!--         <ul id="myContent">              -->
-        <ul class="grid effect-5" id="grid">
-            <li class="card voicemail">
-                <h1>Voicemail from <span class="name">Mom</span></h1>
-                
-                <img src="../images/waveform-green.png" alt="Waveform"/>
-                
-                <p class="transcription"><strong>Yeah, Hello own.</strong> Where are you pick up your phone. Yeah been trying to talk to you all day, call me back. Bye.</p>
-            </li>
-            
-            
-            <li class="card dialpad">
-                <h1>Place a call</h1>
-                
-                <img src="../images/dialpad.png" alt="Dialpad"/>
-            </li>
-            
-            
-            <li class="card textmessage">
-                <h1>Rebecca Mosbarger</h1>
-                
-                <div class="text-conversation">
-                  <div class="row">
-                    <div class="left">
-                      <h2>Rebecca</h2>
-                      <h3>12:14am 11/8/2013</h3>
+      <ul class="grid effect-5" id="grid">
+          <!-- <li class="card voicemail">
+              <h1>Voicemail from <span class="name">Mom</span></h1>
+              
+              <img src="../images/waveform-green.png" alt="Waveform"/>
+              
+              <p class="transcription"><strong>Yeah, Hello own.</strong> Where are you pick up your phone. Yeah been trying to talk to you all day, call me back. Bye.</p>
+          </li> -->
+          
+          
+          <!-- <li class="card dialpad">
+              <h1>Place a call</h1>
+              
+              <img src="../images/dialpad.png" alt="Dialpad"/>
+          </li> -->
+          
+          
+          <li class="card textmessage">
+              <h1>Rebecca Mosbarger</h1>
 
-                      <div class="triangle-topright">
-                      </div>
-                      <img src="images/contacts/becca.jpg" alt="Rebecca Mosbarger" class="contact"/>
-
-                      <p>sartorial whatever cray fugiat fanny pack Blue Bottle </p>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="right">
-                      <h2>Me</h2>
-                      <h3>12:18am 11/8/2013</h3>
-
-                      <img src="images/contacts/zach.jpg" alt="Zachariah Moreno" class="contact"/>
-                      <p>stumptown salvia butcher nihil. Forage quinoa</p>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="left">
-                      <h2>Rebecca</h2>
-                      <h3>1:30am 11/9/2013</h3>
-
-                      <img src="images/contacts/becca.jpg" alt="Rebecca Mosbarger" class="contact"/>
-
-                      <p>Echo Park mumblecore, mollit proident laboris kale chips. Ad yr in, pickled incididunt PBR lomo. Cred slow-carb accusamus, VHS food truck </a>
-                    </div>
-                  </div>
-                  
-                  <input type="text" class="input" width="80%"/>
-                 </div>
-            </li>
-            
-            
-            <li class="card calllog">
-                <h1>Call Log</h1>
-                
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
+              
+              <div class="text-conversation">
                 <div class="row">
-                  <img src="images/call_received_jfk.png"/> <p>3 hours ago from <span class="name">Rebecca Mosbarger</span></p>
+                  <div class="left">
+                    <h2>Rebecca</h2>
+                    <h3>12:14am 11/8/2013</h3>
+
+                    <!-- <div class="triangle-topright">
+                    </div> -->
+                    <img src="images/contacts/becca.png" alt="Rebecca Mosbarger" class="contact"/>
+
+                    <p>sartorial whatever cray fugiat fanny pack Blue Bottle </p>
+                  </div>
                 </div>
                 
                 <div class="row">
-                  <img src="images/call_placed_jfk.png"/> <p>41 min ago to <span class="name">Harrsion Giroux</span></p>
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>12:18am 11/8/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+                    <p>stumptown salvia butcher nihil. Forage quinoa</p>
+                  </div>
                 </div>
                 
                 <div class="row">
-                  <img src="images/call_received_jfk.png"/> <p>12 min ago from <span class="name">Rebecca Mosbarger</span></p>
+                  <div class="left">
+                    <h2>Rebecca</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/becca.png" alt="Rebecca Mosbarger" class="contact"/>
+
+                    <p>Echo Park mumblecore, mollit proident laboris kale chips. Ad yr in, pickled incididunt PBR lomo. Cred slow-carb accusamus, VHS food truck </a>
+                  </div>
+                </div>
+                
+                <div class="message-input input-prepend input-append">
+                  <!-- <button class="btn">+</button> -->
+
+                  <button class="btn"><i class="icon-camera"></i></button>
+
+                  <input type="text" id="appendedPrepended" class="input" placeholder="Send a message..." x-webkit-speech="x-webkit-speech"/>
+
+                  <button class="btn">Send</button>
+                </div>
+               </div>
+          </li>
+          
+          
+          <li class="card calllog">
+              <h1>Call Log</h1>
+
+              <div class="row">
+                <img src="images/missed_call.png"/> <p>seconds ago from <span class="name">Grandma</span></p>
+              </div>
+
+              <div class="row">
+                <img src="images/call_received_jfk.png"/> <p>12 min ago from <span class="name">Rebecca Mosbarger</span></p>
+              </div>
+
+              <div class="row">
+                <img src="images/call_placed_jfk.png"/> <p>41 min ago to <span class="name">Harrsion Giroux</span></p>
+              </div>
+              
+              <div class="row">
+                <img src="images/call_received_jfk.png"/> <p>3 hours ago from <span class="name">Rebecca Mosbarger</span></p>
+              </div>
+
+              <div class="row">
+                <img src="images/missed_call.png"/> <p>yesterday from <span class="name">Barack Obama</span></p>
+              </div>
+
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
+          </li>
+          
+          
+          <!-- <li class="card voicemail">
+              <h1>Voicemail from <span class="name">Rebecca</span></h1>
+              
+              <img src="../images/waveform-yellow.png" alt="Waveform"/>
+              
+              <p class="transcript"><strong>Carles actually street art, raw denim 3 wolf moon ennui VHS</strong> Brooklyn photo booth cornhole wolf synth distillery sartorial. Readymade Intelligentsia pickled you probably haven't heard of them, mixtape Wes Anderson chillwave Etsy Schlitz Williamsburg locavore asymmetrical swag selfies.</p>
+          </li> -->
+          
+          
+          <li class="card textmessage">
+              <h1>Vince Moreno Jr.</h1>
+
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
+              
+              <div class="text-conversation">
+                <div class="row">
+                  <div class="left">
+                    <h2>Vince</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/vince.png" alt="Vince Moreno Jr." class="contact"/>
+
+                    <p>Tumblr jean shorts fingerstache Intelligentsia Banksy</p>
+                  </div>
                 </div>
                 
                 <div class="row">
-                  <img src="images/missed_call.png"/> <p>seconds ago from <span class="name">Grandma</span></p>
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>before they sold out Bushwick wayfarers roof party 8-bit.</p>
+                  </div>
                 </div>
-            </li>
-            
-            
-            <li class="card voicemail">
-                <h1>Voicemail from <span class="name">Rebecca</span></h1>
                 
-                <img src="../images/waveform-yellow.png" alt="Waveform"/>
+                <div class="row">
+                  <div class="left">
+                    <h2>Vince</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/vince.png" alt="Vince Moreno Jr." class="contact"/>
+
+                    <p>Squid four loko skateboard Truffaut Shoreditch</a>
+                  </div>
+                </div>
                 
-                <p class="transcript"><strong>Carles actually street art, raw denim 3 wolf moon ennui VHS</strong> Brooklyn photo booth cornhole wolf synth distillery sartorial. Readymade Intelligentsia pickled you probably haven't heard of them, mixtape Wes Anderson chillwave Etsy Schlitz Williamsburg locavore asymmetrical swag selfies.</p>
-            </li>
-            
-            
-            <li class="card textmessage">
-                <h1>Vince Moreno Jr.</h1>
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>scenester, tousled food truck freegan. Vinyl irony 8-bit, wayfarers</p>
+                  </div>
+                </div>
                 
-                <div class="text-conversation">
-                  <div class="row">
-                    <div class="left">
-                      <h2>Vince</h2>
-                      <h3>1:30am 11/9/2013</h3>
+                <div class="row">
+                  <div class="left">
+                    <h2>Vince</h2>
+                    <h3>1:30am 11/9/2013</h3>
 
-                      <img src="images/contacts/vince.jpg" alt="Vince Moreno Jr." class="contact"/>
+                    <img src="images/contacts/vince.png" alt="Vince Moreno Jr." class="contact"/>
 
-                      <p>Tumblr jean shorts fingerstache Intelligentsia Banksy</p>
-                    </div>
+                    <p>Thundercats retro paleo</a>
                   </div>
-                  
-                  <div class="row">
-                    <div class="right">
-                      <h2>Me</h2>
-                      <h3>1:30am 11/9/2013</h3>
-
-                      <img src="images/contacts/zach.jpg" alt="Zachariah Moreno" class="contact"/>
-
-                      <p>before they sold out Bushwick wayfarers roof party 8-bit.</p>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="left">
-                      <h2>Vince</h2>
-                      <h3>1:30am 11/9/2013</h3>
-
-                      <img src="images/contacts/vince.jpg" alt="Vince Moreno Jr." class="contact"/>
-
-                      <p>Squid four loko skateboard Truffaut Shoreditch</a>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="right">
-                      <h2>Me</h2>
-                      <h3>1:30am 11/9/2013</h3>
-
-                      <img src="images/contacts/zach.jpg" alt="Zachariah Moreno" class="contact"/>
-
-                      <p>scenester, tousled food truck freegan. Vinyl irony 8-bit, wayfarers</p>
-                    </div>
-                  </div>
-                  
-                  <div class="row">
-                    <div class="left">
-                      <h2>Vince</h2>
-                      <h3>1:30am 11/9/2013</h3>
-
-                      <img src="images/contacts/vince.jpg" alt="Vince Moreno Jr." class="contact"/>
-
-                      <p>Thundercats retro paleo</a>
-                    </div>
-                  </div>
-                  
-                  <input type="text" class="input" width="80%"/>
-                 </div>
-            </li>
-            
-            
-            <li class="card video">
-                <h1>YouTube Video from <span class="name">Alex</span></h1>
+                </div>
                 
-                <iframe width="320" height="240" src="//www.youtube.com/embed/os6HD-sCRn8" frameborder="0" allowfullscreen></iframe>
-            </li>
-        </ul> 
+                <div class="message-input input-prepend input-append">
+                  <!-- <button class="btn">+</button> -->
+
+                  <button class="btn"><i class="icon-camera"></i></button>
+
+                  <input type="text" id="appendedPrepended" class="input" placeholder="Send a message..." x-webkit-speech="x-webkit-speech"/>
+
+                  <button class="btn">Send</button>
+                </div>
+               </div>
+          </li>
+          
+          
+          <!-- <li class="card video">
+              <h1>YouTube Video from <span class="name">Alex</span></h1>
+              
+              <iframe width="320" height="240" src="//www.youtube.com/embed/os6HD-sCRn8" frameborder="0" allowfullscreen></iframe>
+          </li> -->
+      </ul> 
     </div>
   
 </div>
