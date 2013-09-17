@@ -3,7 +3,7 @@
 body {
 	background-color: #E5E5E5;
 	font-size: 14px;
-/* 	font-family: 'Open Sans'; */
+	// font-family: 'Open Sans';	
 	font-family: 'Roboto';
 
 	[class^="icon-"],
@@ -63,16 +63,15 @@ body {
 	margin: 0px 0px 0px 0px;
 
 	#filters {
+		display: block;
+		margin-left: 45%;
+
 		ul {
 			li {
 				list-style-type: none;
 				float: left;
 				margin-left: 24px;
 				margin-top: 5px;
-
-				&:first-child {
-					margin-left: 600px;
-				}
 
 				a {
 					color: #3B3B3B;
