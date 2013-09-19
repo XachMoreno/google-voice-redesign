@@ -62,24 +62,35 @@
     <a href="#">Call Log <i class="icon-th-list"></i></a>
 </nav> -->
 
+<!-- <ul id="gn-menu" class="gn-menu-main">
+    <li class="gn-trigger">
+        <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+        <nav class="gn-menu-wrapper">
+            <div class="gn-scroller">
+              <ul class="gn-menu">
+                  <li class="gn-search-item">
+                      <input placeholder="Search" type="search" class="gn-search">
+                      <a class="gn-icon gn-icon-search"><span>Search</span></a>
+                  </li>
+                  <li>
+                      <a class="gn-icon gn-icon-download">Downloads</a>
+                      <ul class="gn-submenu">
+                          <li><a class="gn-icon gn-icon-illustrator">Vector Illustrations</a></li>
+                          <li><a class="gn-icon gn-icon-photoshop">Photoshop files</a></li>
+                      </ul>
+                  </li>
+                  <li><a class="gn-icon gn-icon-cog">Settings</a></li>
+                  <li></li>
+                  
+              </ul>
+          </div>
+        </nav>
+    </li>
+</ul> -->
+
 <div class="page-wrap">
     <div class="content" id="container">
-      <ul class="grid effect-5" id="grid">
-          <!-- <li class="card voicemail">
-              <h1>Voicemail from <span class="name">Mom</span></h1>
-              
-              <img src="../images/waveform-green.png" alt="Waveform"/>
-              
-              <p class="transcription"><strong>Yeah, Hello own.</strong> Where are you pick up your phone. Yeah been trying to talk to you all day, call me back. Bye.</p>
-          </li> -->
-          
-          
-          <!-- <li class="card dialpad">
-              <h1>Place a call</h1>
-              
-              <img src="../images/dialpad.png" alt="Dialpad"/>
-          </li> -->
-          
+      <ul class="grid effect-5" id="grid">          
           
           <li class="card textmessage">
               <h1>Rebecca Mosbarger</h1>
@@ -128,13 +139,89 @@
 
                     <img src="images/contacts/becca.png" alt="Rebecca Mosbarger" class="contact"/>
 
-                    <i class="icon-play"><!-- Play Button --></i>
-                    <div id="vm-waveform-1">
-                      <!-- Voicemail -->
-                      <div class="progress progress-striped active" id="progress-bar">
-                        <div class="progress-bar progress-bar-info"></div>
+                    <div class="voicemail">
+                      <i class="icon-play"><!-- Play Button --></i>
+                      <div id="vm-waveform-1">
+                        <!-- Voicemail -->
+                        <div class="progress progress-striped active" id="progress-bar">
+                          <div class="progress-bar progress-bar-info"></div>
+                        </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>12:18am 11/8/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+                    <p>Forage quinoa mollit proident laboris kale chips</p>
+                  </div>
+                </div>
+                
+                <div class="message-input input-prepend input-append">
+                  <!-- <button class="btn">+</button> -->
+
+                  <button class="btn"><i class="icon-camera"></i></button>
+
+                  <input type="text" id="appendedPrepended" class="input" placeholder="Send a message..." x-webkit-speech="x-webkit-speech"/>
+
+                  <button class="btn">Send</button>
+                </div>
+               </div>
+          </li>
+
+
+          <li class="card textmessage">
+              <h1>Alex Whedbee</h1>
+
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
+              
+              <div class="text-conversation">
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>Tofu Neutra meh stumptown. Intelligentsia keffiyeh bitters vegan, Bushwick sustainable banh mi ennui wayfarers pork belly letterpress Portland. Chia bitters messenger bag freegan Portland. Banksy trust fund Etsy put a bird on it skateboard.</p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="left">
+                    <h2>Alex</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/Alex.png" alt="Alex" class="contact"/>
+                    <p>
+                    <iframe width="203" height="152" src="//www.youtube.com/embed/os6HD-sCRn8" frameborder="0" allowfullscreen></iframe>
+                  </p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>scenester, tousled food truck freegan. Vinyl irony 8-bit, wayfarers</p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="left">
+                    <h2>Alex</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/Alex.png" alt="Alex" class="contact"/>
+
+                    <p>Williamsburg you probably haven't heard of them sustainable Shoreditch tattooed Odd Future master cleanse. Etsy paleo forage, squid brunch wayfarers XOXO Cosby sweater Neutra VHS vinyl</a>
                   </div>
                 </div>
                 
@@ -176,15 +263,13 @@
 
               <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
           </li>
-          
-          
-          <!-- <li class="card voicemail">
-              <h1>Voicemail from <span class="name">Rebecca</span></h1>
+
+
+          <li class="card dialpad">
+              <h1>Place a call</h1>
               
-              <img src="../images/waveform-yellow.png" alt="Waveform"/>
-              
-              <p class="transcript"><strong>Carles actually street art, raw denim 3 wolf moon ennui VHS</strong> Brooklyn photo booth cornhole wolf synth distillery sartorial. Readymade Intelligentsia pickled you probably haven't heard of them, mixtape Wes Anderson chillwave Etsy Schlitz Williamsburg locavore asymmetrical swag selfies.</p>
-          </li> -->
+              <img src="../images/dialpad.png" alt="Dialpad"/>
+          </li>
           
           
           <li class="card textmessage">
@@ -222,7 +307,7 @@
 
                     <img src="images/contacts/vince.png" alt="Vince Moreno Jr." class="contact"/>
 
-                    <p>Squid four loko skateboard Truffaut Shoreditch</a>
+                    <p> Meggings post-ironic squid, Truffaut kogi fingerstache actually vinyl. Messenger bag fanny pack tote bag vegan irony fap. Selvage PBR&B Portland deep v slow-carb.</a>
                   </div>
                 </div>
                 
@@ -233,7 +318,7 @@
 
                     <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
 
-                    <p>scenester, tousled food truck freegan. Vinyl irony 8-bit, wayfarers</p>
+                    <p><iframe width="203" height="152" src="//www.youtube.com/embed/vjN3xcOjeKs" frameborder="0" allowfullscreen></iframe></p>
                   </div>
                 </div>
                 
@@ -259,13 +344,135 @@
                 </div>
                </div>
           </li>
+
           
-          
-          <!-- <li class="card video">
-              <h1>YouTube Video from <span class="name">Alex</span></h1>
+          <li class="card textmessage">
+              <h1>Harrison Giroux</h1>
+
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
               
-              <iframe width="320" height="240" src="//www.youtube.com/embed/os6HD-sCRn8" frameborder="0" allowfullscreen></iframe>
-          </li> -->
+              <div class="text-conversation">
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>before they sold out Bushwick wayfarers roof party 8-bit.</p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="left">
+                    <h2>Harrison</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/Harrison.png" alt="Harrison" class="contact"/>
+
+                    <p>Squid four loko skateboard Truffaut Shoreditch Meggings post-ironic squid, Truffaut kogi fingerstache actually vinyl. Messenger bag fanny pack</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+
+                    <p>scenester, tousled food truck freegan. Vinyl irony 8-bit, wayfarers </p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="left">
+                    <h2>Harrison</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/Harrison.png" alt="Harrison" class="contact"/>
+
+                    <p>Thundercats retro paleo</a>
+                  </div>
+                </div>
+                
+                <div class="message-input input-prepend input-append">
+                  <!-- <button class="btn">+</button> -->
+
+                  <button class="btn"><i class="icon-camera"></i></button>
+
+                  <input type="text" id="appendedPrepended" class="input" placeholder="Send a message..." x-webkit-speech="x-webkit-speech"/>
+
+                  <button class="btn">Send</button>
+                </div>
+               </div>
+          </li>
+
+
+          <li class="card textmessage">
+              <h1>Tim Mosbarger</h1>
+
+              <h6 class="more-link"><a href="#" alt="Load more">...</a></h6>
+              
+              <div class="text-conversation">
+                <div class="row">
+                  <div class="left">
+                    <h2>Tim</h2>
+                    <h3>12:14am 11/8/2013</h3>
+
+                    <!-- <div class="triangle-topright">
+                    </div> -->
+                    <img src="images/contacts/Tim.png" alt="Tim Mosbarger" class="contact"/>
+
+                    <p>sartorial whatever cray fugiat fanny pack Blue Bottle </p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>12:18am 11/8/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+                    <p>stumptown salvia butcher nihil. Forage quinoa</p>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="left">
+                    <h2>Tim</h2>
+                    <h3>1:30am 11/9/2013</h3>
+
+                    <img src="images/contacts/Tim.png" alt="Tim Mosbarger" class="contact"/>
+
+                    <p>Echo Park mumblecore, mollit proident laboris kale chips. Ad yr in, pickled incididunt PBR lomo. Cred slow-carb accusamus, VHS food truck </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="right">
+                    <h2>Me</h2>
+                    <h3>12:18am 11/8/2013</h3>
+
+                    <img src="images/contacts/zach.png" alt="Zachariah Moreno" class="contact"/>
+                    <p>#BOOM #YOLO
+                      <img src="images/tim-wwf.png" alt="wwf"/>
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="message-input input-prepend input-append">
+                  <!-- <button class="btn">+</button> -->
+
+                  <button class="btn"><i class="icon-camera"></i></button>
+
+                  <input type="text" id="appendedPrepended" class="input" placeholder="Send a message..." x-webkit-speech="x-webkit-speech"/>
+
+                  <button class="btn">Send</button>
+                </div>
+               </div>
+          </li>
+
       </ul> 
     </div>
   
